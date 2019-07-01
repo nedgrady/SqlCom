@@ -45,16 +45,22 @@ namespace SqlCom
 			}
 		}
 
+		public SqlParameterCollectionCom Parameters
+		{
+			get;
+		}
+
+		public SqlCommandCom()
+		{
+			Parameters = new SqlParameterCollectionCom(SqlCommand.Parameters);
+		}
+
 		public void Execute()
 		{
 			SqlCommand.Connection.Open();
-
 			using (SqlCommand.ExecuteReader())
 			{
 			}
 		}
-
-		public void Add(SqlScalarParameterCom parameterCom) => SqlCommand.Parameters.Add(parameterCom.SqlParameter);
-
 	}
 }

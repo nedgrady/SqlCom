@@ -59,7 +59,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConnectionCom.cs" />
-    <Compile Include="SqlScalarParameterCom.cs" />
+    <Compile Include="SqlParameterCollectionCom.cs" />
+    <Compile Include="SqlParameterParameterCom.cs" />
     <Compile Include="SqlCommandCom.cs" />
   </ItemGroup>
   <ItemGroup>

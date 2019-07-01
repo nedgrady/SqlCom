@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace SqlCom
 {
 	[GuidAttribute("ADF0D549-D84B-4598-A15E-5B22C1E35FB6")]
-	public class SqlScalarParameterCom : ServicedComponent
+	public class SqlParameterCom : ServicedComponent
 	{
 		public SqlParameter SqlParameter { get; private set; } = new SqlParameter();
 
@@ -38,6 +38,12 @@ namespace SqlCom
 		{
 			get => SqlParameter.Size;
 			set => SqlParameter.Size = value;
+		}
+
+		public string ParameterName
+		{
+			get => SqlParameter.ParameterName;
+			set => SqlParameter.ParameterName = value;
 		}
 	}
 }
