@@ -1,5 +1,8 @@
 using NUnit.Framework;
 using System.Configuration;
+using System.Runtime.InteropServices;
+using Microsoft.Build.Utilities;
+using SqlCom;
 
 namespace SqlCom.Test
 {
@@ -14,7 +17,6 @@ namespace SqlCom.Test
 		public void Test1()
 		{
 			
-			Assert.Pass();
 		}
 	}
 }
